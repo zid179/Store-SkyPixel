@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyPixel Store</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+    <nav data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">SkyPixel Rank</div>
+        <ul class="discord">
+          <li><a class="icon"><i class="ph ph-arrow-bend-up-left"></i></i></a></li>
+          <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+    
+     <main>
+        <div class="ranks">
+            <div class="rank-card" onclick="showPopup('VIP')" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="vip.jpg" alt="VIP Rank" class="image-rank">
+                <button class="rank-btn">VIP - Rp15.000</button>
+            </div>
+            <div class="rank-card" onclick="showPopup('MVP')" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="mvp.jpg" alt="MVP Rank" class="image-rank">
+                <button class="rank-btn">MVP - Rp20.000</button>
+            </div>
+            <div class="rank-card" onclick="showPopup('ELITE')" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="elite.jpg" alt="ELITE Rank" class="image-rank">
+                <button class="rank-btn">ELITE - Rp40.000</button>
+            </div>
+            <div class="rank-card" onclick="showPopup('LEGEND')" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="legend.jpg" alt="LEGEND Rank" class="image-rank">
+                <button class="rank-btn">LEGEND - Rp50.000</button>
+            </div>
+            <div class="rank-card" onclick="showPopup('SULTAN')" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="sultan.jpg" alt="SULTAN Rank" class="image-rank">
+                <button class="rank-btn">SULTAN - Rp65.000</button>
+            </div>
+            <div class="rank-card" onclick="showPopup('SUPREME')" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="supreme.jpg" alt="SUPREME Rank" class="image-rank">
+                <button class="rank-btn">SUPREME - Rp80.000</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="rank-title"></h2>
+            <div id="rank-details"></div>
+        </div>
+    </div>
+    
+    <div>
+      <h3 class="dari_siapa">@Clevirrr</h3>
+    </div>
+
+    <script src="script.js"></script>
+    
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

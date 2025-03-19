@@ -1,0 +1,293 @@
+/* Background */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #141E30, #243B55);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Loading */
+.loading-container {
+    text-align: center;
+    color: white;
+}
+
+/* Animasi Loader */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #00C9FF;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Animasi Spinning */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Teks Loading */
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.8;
+    animation: fadeText 1.5s infinite alternate;
+}
+
+/* Animasi Teks */
+@keyframes fadeText {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* loading selesai */
+/* Navbar */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    width: 407px;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.discord {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  background-color: crimson;
+  padding: 15px;
+  border-radius: 13px;
+}
+
+.discord a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.navbar-rank {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+}
+
+/* Responsif navbar */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Daftar Rank */
+.ranks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 10px;
+    margin-top: 150px;
+}
+
+.rank-card {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rank-card:hover {
+    background-color: #444;
+}
+
+.rank-card img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.image-rank {
+  border-radius: 15px;
+}
+
+.dari_siapa {
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+.card {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  aspect-ratio: 9/16;
+}
+
+.image {
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.rank-bn {
+  margin-top: 40px;
+  display: flex;
+  text-decoration: none;
+  background-color: #333;
+  border: 1px solid;
+  list-style: none;
+  padding: 15px;
+  margin-left: 40px;
+  border-radius: 25px;
+  width: 75px;
+}
+
+.rank-bn a {
+  color:white;
+  text-decoration: none;
+}
+
+.rank-bn>li>a:hover {
+  color: crimson;
+}
+
+.rank-bn:hover {
+  color: crimson;
+}
+
+.server {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-radius: 15px;
+  margin-top: 70px;
+}
+
+.item {
+  height: 180px;
+  flex: 1 0 200px;
+  border-radius: 15px;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.popup-content {
+    background: #222;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .popup-content {
+        width: 95%;
+        max-width: 350px;
+    }
+}
